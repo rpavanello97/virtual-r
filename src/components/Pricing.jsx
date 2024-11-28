@@ -1,5 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
-import { pricingOptions } from "../constants";
+import { pricingOptions, labels } from "../constants";
 
 /**
  * Pricing component that renders a section with pricing options.
@@ -14,7 +14,7 @@ const Pricing = () => {
   return (
     <div id="pricingId" className="mt-20">
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide">
-        Pricing
+        {labels.pricing.pricing}
       </h2>
       <div className="flex flex-wrap">
         {pricingOptions.map((option, index) => (
@@ -24,13 +24,13 @@ const Pricing = () => {
                 {option.title}
                 {option.title === "Pro" && (
                   <span className="bg-gradient-to-r from-orange-500 to-red-400 text-transparent bg-clip-text text-xl mb-4 ml-2">
-                    (Most Popular)
+                    {labels.pricing.mostPopular}
                   </span>
                 )}
               </p>
               <p className="mb-8">
                 <span className="text-5xl mt-6 mr-2">{option.price}</span>
-                <span className="text-neutral-400 tracking-tight">/Month</span>
+                <span className="text-neutral-400 tracking-tight">{labels.pricing.month}</span>
               </p>
               <ul>
                 {option.features.map((feature, index) => (
@@ -44,7 +44,7 @@ const Pricing = () => {
                 href="#"
                 className="inline-flex justify-center items-center text-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-orange-900 border border-orange-900 rounded-lg transition duration-200"
               >
-                Subscribe
+                {labels.pricing.subscribe}
               </a>
             </div>
           </div>

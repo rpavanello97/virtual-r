@@ -11,6 +11,7 @@ import user3 from "../assets/profile-pictures/user3.jpg";
 import user4 from "../assets/profile-pictures/user4.jpg";
 import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
+import Navbar from "../components/Navbar";
 
 export const navItems = [
   { label: "Features", href: "#featuresId"},
@@ -181,4 +182,35 @@ export const labels = {
   feature: "Feature",
   h2text: "Easily build ",
   h2text2: "your code",
+  footer: {
+    resources: "Resources",
+    platform: "Platform",
+    community: "Community"
+  },
+  heroSection: {
+    h1: "VirtualR build tools ",
+    h1Span: " for developers",
+    pText: "Empower your creativity and bring your VR app ideas to life with our intuitive development tools. Get started today and turn your imagination into immersive reality!",
+    startForFree: "Start for free",
+    documentation: "Documentation",
+    browserNotSupportVideo: "Your browser does not support the video tag.",
+  },
+  navbar: {
+    virtualr: "VirtualR",
+    signIn: "Sign In",
+    createAccount: "Create an Account",
+  },
+  pricing: {
+    pricing: "Pricing",
+    mostPopular: "(Most Popular)",
+    month: "/Month",
+    subscribe: "Subscribe",
+  },
+  testimonials: {
+    peopleSaying : "What People are saying",
+  },
+  workflow: {
+    h2text: "Accelerate your ",
+    h2text2: "coding workflow"
+  } 
 }

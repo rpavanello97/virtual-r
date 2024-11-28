@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import { navItems } from "../constants";
+import { navItems, labels } from "../constants";
 
 /**
  * Navbar component that renders a responsive navigation bar with a logo,
@@ -24,7 +24,7 @@ const Navbar = () => {
           <a href="">
           <div className="flex items-center flex-shrink-0">            
             <img className="h-10 w-10 mr-2" src={logo} alt="Logo" />
-            <span className="text-xl tracking-tight">VirtualR</span>            
+            <span className="text-xl tracking-tight">{labels.navbar.virtualr}</span>            
           </div>
           </a>
           <ul className="hidden lg:flex ml-14 space-x-12">
@@ -36,13 +36,13 @@ const Navbar = () => {
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center">
             <a href="#" className="py-2 px-3 border rounded-md">
-              Sign In
+              {labels.navbar.signIn}
             </a>
             <a
               href="#"
               className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
             >
-              Create an account
+              {labels.navbar.createAccount}
             </a>
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
@@ -62,13 +62,13 @@ const Navbar = () => {
             </ul>
             <div className="flex space-x-6">
               <a href="#" className="py-2 px-3 border rounded-md text-sm">
-                Sign In
+                {labels.navbar.signIn}
               </a>
               <a
                 href="#"
                 className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800 text-sm"
               >
-                Create an account
+                {labels.navbar.createAccount}
               </a>
             </div>
           </div>
