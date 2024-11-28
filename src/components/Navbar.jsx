@@ -1,7 +1,8 @@
-import { Menu, X } from "lucide-react";
+import { Menu, X, Settings } from "lucide-react";
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { navItems, labels } from "../constants";
+import SettingPopover from "./SettingPopover";
 
 /**
  * Navbar component that renders a responsive navigation bar with a logo,
@@ -35,15 +36,9 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <a href="#" className="py-2 px-3 border rounded-md">
-              {labels.navbar.signIn}
-            </a>
-            <a
-              href="#"
-              className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
-            >
-              {labels.navbar.createAccount}
-            </a>
+            <a href="#" className="py-2 px-3">
+              <SettingPopover />
+            </a>            
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar}>

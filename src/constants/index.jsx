@@ -11,7 +11,6 @@ import user3 from "../assets/profile-pictures/user3.jpg";
 import user4 from "../assets/profile-pictures/user4.jpg";
 import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
-import Navbar from "../components/Navbar";
 
 export const navItems = [
   { label: "Features", href: "#featuresId"},
@@ -212,5 +211,9 @@ export const labels = {
   workflow: {
     h2text: "Accelerate your ",
     h2text2: "coding workflow"
-  } 
+  },
+  settingsPopover: {
+    portuguese: "Portuguese",
+    english: "English"
+  }
 }
